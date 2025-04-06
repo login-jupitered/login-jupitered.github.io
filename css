@@ -1,0 +1,13 @@
+* {box-sizing:border-box; -webkit-tap-highlight-color:transparent; -webkit-text-size-adjust:none; -webkit-touch-callout:none;
+	-webkit-user-select:inherit; -moz-user-select:inherit; -ms-user-select:inherit; user-select:inherit;}
+.selectable, .textbox, .textboxp2, .textmenu, .textbox *, .textboxp2 *, .textmenu *, .selectable *, #text_find, #serverlog, #clientlog, .password, #help, textarea
+	{-webkit-user-select:text; -moz-user-select:text; -ms-user-select:text; user-select:text;}
+body, .unselectable, .unselectable *, .placeholder
+	{-webkit-user-select:none; -moz-user-select:none; -ms-user-select:none; user-select:none;}
+body, .password, .normaltext {font-family:Arial; font-size:12px; line-height:16px; color:black; font-weight:normal; font-style:normal; text-decoration:none;}
+body {margin:0px; cursor:default; white-space:nowrap; word-wrap:break-word; word-break:break-word;}
+.big, #pagetitle, #pagetitle2 {font-size:14px; font-weight:bold; line-height:18px;}
+.small {font-size:10px; font-weight:normal; line-height:13px;}
+.helptitle {font-size:16px; line-height:18px; font-family:Arial Black,Arial; font-weight:bold;}
+.code {font-family:Andale Mono,Monaco,Courier,Courier New; font-size:12px; white-space:pre; margin:0px; padding:0px;}
+.hyperlink:hover {text-decoration:underline}
