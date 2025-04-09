@@ -1,0 +1,63 @@
+      <!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jupiter Login</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="chrome.css"/>
+  <link rel="stylesheet" href="blue.css"/>
+
+  </head>
+<body>
+    <nav class="nav-container">
+        <div class="tabs">
+            <a href="https://jupitered.com/?home=1"><button class="logo"><img src="https://login.jupitered.com/media/jupiter_logo_w.svg" width="250" height="35" margin: "0"></button></a>
+          </ul>
+          <ul class="right-side" id="right-side">
+          <li><a href="https://login.jupitered.com/login/index.php"><p>Español</p></a></li>
+          <li><a href="https://login.jupitered.com/signup/"><p>Signup</p></a></li>
+          <li><a href="https://login.jupitered.com/edstore/"><p>EdStore</p></a></li>
+          <li><a href="https://login.jupitered.com/help/"><p>Help</p></a></li>
+          <li><a href="https://jupitered.com/privacy.html"><p>Privacy</p></a></li>
+          <li><a href="https://jupitered.com/?home=1"><p>About</p></a></li>
+          </ul>
+         </div>
+    </nav>
+  </header>
+
+  <main>
+    <div class="rcorners" id="rcorners">
+     <div class="login-box">
+      <div class="tabs">
+        <div class="persontype" id="persontype">
+          <ul>
+            <a href="student.html"><li class="student" id="student">Student</li></a>
+        <a href="parent.html"><li>Parent</li></a>
+        <a href="sub.html"><li>Sub</li></a>
+        <a href="ta.html"><li>TA</li></a>
+        <a href="index.html"><li>Staff</li></a>
+          </ul>
+      </div>
+     </div>
+
+      <form method="POST" data-netlify="true">
+        <ul class="interface" id="interface">
+          <li><input type="text" class="username" placeholder="Name or ID" width="600" height="70"/></li>
+          <br>
+          <li><input type="password" class="password" placeholder="Password" width="600" height="70"/></li>
+          <br>
+          <li><label class="arrow"><select>
+            <option>Millennium High School</option>
+            <option>Other School...</option>
+            </select></label></li>
+        </ul>
+          <ul><a href="https://login.jupitered.com/login/forgotstaff.php"><li type="button" class="help-btn" id="help-btn">Help Me Login</li></a>
+          <li type="submit" class="login-btn" id="login-btn">Login</li>
+      </ul>
+     </form>
+   </div>      
+ </div>
+ </main>
+</body>
+</html>
