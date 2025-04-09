@@ -1,69 +1,286 @@
-      <!DOCTYPE html>
-<html lang="en">
- <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Jupiter Login</title>
-  <link rel="stylesheet" href="styles.css"/>
-  <link rel="stylesheet" href="chrome.css"/>
-  <link rel="stylesheet" href="blue.css"/>
+	/* BLUE */
+body{
+	margin: 0;
+  background-color:#f2f2f2
+}
 
-  </head>
-<body>
-    <nav class="nav-container">
-        <div class="tabs">
-            <a href="https://jupitered.com/?home=1"><button class="logo"><img src="https://login.jupitered.com/media/jupiter_logo_w.svg" width="250" height="35" margin: "0"></button></a>
-          </ul>
-          <ul class="right-side" id="right-side">
-          <li><a href="https://login.jupitered.com/login/index.php"><p>Español</p></a></li>
-          <li><a href="https://login.jupitered.com/signup/"><p>Signup</p></a></li>
-          <li><a href="https://login.jupitered.com/edstore/"><p>EdStore</p></a></li>
-          <li><a href="https://login.jupitered.com/help/"><p>Help</p></a></li>
-          <li><a href="https://jupitered.com/privacy.html"><p>Privacy</p></a></li>
-          <li><a href="https://jupitered.com/?home=1"><p>About</p></a></li>
-          </ul>
-         </div>
-    </nav>
-  </header>
+.nav-container{
+	display: flex;
+	margin: 0;
+	border-radius: 0%;
+	background: #0A8097;
+  width: 1500px;
+  height: 30px;
+}
 
-  <main>
-    <div class="rcorners" id="rcorners">
-     <div class="login-box">
-      <div class="tabs">
-        <div class="persontype" id="persontype">
-          <ul>
-            <a href="student.html"><li class="student" id="student">Student</li></a>
-        <a href="parent.html"><li>Parent</li></a>
-        <a href="sub.html"><li>Sub</li></a>
-        <a href="ta.html"><li>TA</li></a>
-        <a href="index.html"><li>Staff</li></a>
-          </ul>
-      </div>
-     </div>
+.right-side{
+	margin-top: -50px;
+	margin-right: 0;
+	margin-left: 1140px;
+  list-style-type:none;
+  font-family: sans-serif;
+  display: flex;
+  background-color: red;
+}
 
-      <form method="POST" data-netlify="true">
-        <ul class="interface" id="interface">
-          <li><input type="text" class="username" placeholder="Username" width="600" height="70"/></li>
-          <br>
-          <li><input type="password" class="password" placeholder="Password" width="600" height="70"/></li>
-          <br>
-          <li><label class="arrow"><select>
-            <option>Stay logged in</option>
-            <option>Lock screen if idle 5 minutes</option>
-            <option>Lock screen if idle 10 minutes</option>
-            <option>Lock screen if idle 15 minutes</option>
-            <option>Lock screen if idle 20 minutes</option>
-            <option>Lock screen if idle 30 minutes</option>
-            <option>Lock screen if idle 45 minutes</option>
-            <option>Lock screen if idle 60 minutes</option>
-            </select></label></li>
-        </ul>
-          <ul><a href="https://login.jupitered.com/login/forgotstaff.php"><li type="button" class="help-btn" id="help-btn">Help Me Login</li></a>
-          <li type="submit" class="login-btn" id="login-btn">Login</li>
-      </ul>
-     </form>
-   </div>      
- </div>
- </main>
-</body>
-</html>
+.right-side li{
+	width: flex;
+  display: inline-block;
+  font-size:12px; 
+  padding-top: 3px;
+  padding-bottom: 3px;
+  padding-right: 5px;
+  padding-left: 5px;
+  color: white;
+  border-radius: 50px;
+}
+
+.rcorners {
+  border-radius: 15px;
+  background: #ffffff;
+  padding-top: 20px;
+  padding-bottom: 10px;
+  padding-left: 20px;
+  padding-right: 20px;
+  width: 32%;
+  height: 282px;
+  margin: auto;
+  margin-top: 125px;
+  margin-bottom: 200px;
+}
+
+.tab{
+	font-size:19px; 
+  background-color:#086c84; 
+	border-radius:50px;
+	padding-top: 5px;
+	padding-bottom: 5px;
+}
+
+.persontype {
+  list-style-type:none;
+  background: #086c84;
+  font-size:18px; 
+  font-family: sans-serif;
+  width: 95%;
+  margin-top: -18px;
+  margin-right: auto;
+  margin-left: auto;
+  border-radius: 50px;
+  margin-bottom: 30px;
+}
+
+.persontype li:not(.student){
+    display: inline-block;
+    color: white;
+  	border-radius:50px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: -10px;
+    margin-left: -10px;
+}
+
+.student{
+    margin-left: -35px;
+    display: inline-block;
+    color: white;
+  	border-radius:50px;
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 30px;
+    padding-right: 30px;
+    margin-right: -10px;
+}
+
+.help-btn{
+	font-size:18px; 
+	background-color:#086c84; 
+	border-radius:50px;
+  color: white;
+  width: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+  display: inline-block;
+  font-family: sans-serif;
+  list-style-type:none;
+  margin-right: 155px;
+  margin-left: -32px;
+  position: relative;
+  top:-252px;
+}
+
+.login-btn{
+	font-size:18px; 
+	background-color:#086c84; 
+	border-radius:50px;
+  color: white;
+  width: flex;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 50px;
+    padding-right: 50px;
+  display: inline-block;
+  font-family: sans-serif;
+  list-style-type:none;
+  position: relative;
+  top:-252px;
+}
+
+.logo{
+	background-color:#086c84; 
+	border-radius:50px;
+	border: 1px solid #086c84;
+  display: flex;
+  margin-left: -30px;
+}
+
+.interface{
+	width: 500px;
+	height: 400px;
+	margin-left: 25%;
+  margin-bottom: 0;
+  list-style-type:none;
+  font-family: sans-serif;
+  appearance: none;
+  margin-left: 35px;
+}
+
+input{
+	background: none;
+	border: 2px solid #64c5d8;
+	border-radius: 5px;
+  width: 60%;
+  height: 25px;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+input::placeholder{
+	color: #64c5d8;
+}
+
+select{
+	appearance: none;
+	background: none;
+	border: 2px solid #64c5d8;
+	border-radius: 5px;
+  width: 63%;
+  height: 30px;
+  font-size: 18px;
+  padding-left: 10px;
+}
+
+.arrow::after{
+  content: '';
+  border-width: 7px;
+  border-style: solid;
+  border-color: transparent;
+  border-top-color: #64c5d8;
+  display: inline-block;
+  position: absolute;
+  bottom:16px;
+  left: 865px;
+}
+
+/* gray 95  (bg) - see darkercolor.css */
+body, .bgcolor, #pagebuttons, .progspace {background-color:hsl(0,0%,95%)}
+#submast, #minisubmast {background:linear-gradient(to top, hsla(0,0%,95%,0) 0px, hsla(0,0%,95%,1) 10px)}
+#tipbox {border:2px solid hsl(0,0%,95%)}
+.bgborder, .graybord {border-color:hsl(0,0%,95%)}
+.planmask {background:linear-gradient(to right, hsl(0,0%,95%) 40px, transparent 40px)}.lessonsubject {background-color:hsl(0,0%,95%)}
+.lessonnoclass {background-color:hsl(0,0%,90%)}
+
+/* aqua 25  (logo,btn) */
+.btn, .dimbtn, .btncolor, .menuabtndark, #logobg1, #logobg2, #loginlogobg, .toptab1:hover, .toptab1hi, .navrow:hover, .classtab:hover, .classsemi:hover, .darkhi:hover, .btntran:hover, .btntranlit, .darker, #podprogspace, .jupbtnlit, .jupbtn:hover, .caldate:hover, .caldim:hover, .caltoday, .btnllit, .findbg .rowhi:hover, .xhover, #mailcount
+	{background-color:hsl(190,100%,25%)}
+.poduidark {background-color:hsl(190,100%,25%) !important}
+.logotext {color:hsl(190,100%,25%)}
+@keyframes glowbtn {
+	0%,40%   {background-color:hsl(190,60%,50%)}
+	60%,100% {background-color:hsl(190,100%,25%)}
+}
+/* aqua 32  (bar1,darkbox) */
+#bar1, #sidebar, .navlist, .topnav1list, .navtab, .navtabdim, .darkbox, .dark, .darkhi, #tipbox, .topnav2list .navlit, #loginbar1, .minibar, #podbar1, #podbar2, .podbtnrim, .jupbtns, .calbox, #busybar, .findbg, #touchnavbtn, #opsnav .tabcurve
+	{background-color:hsl(190,85%,32%)}
+a, .hyperlink, .clink:hover, color, .colortext, .btnl {color:hsl(190,85%,32%)}
+.darkbox a, .darkbox .hyperlink, .dark .hyperlink, .darkbox .colortext {color:hsl(175,100%,44%) !important} /* green 44 */
+.alert a, .alert .hyperlink {color:hsl(190,85%,32%) !important}
+.borderlit {border-color:hsl(190,85%,32%)}
+/* aqua 38 */
+.btn:hover, .btnlit, .classsemi {background-color:hsl(190,85%,38%) !important}
+/* aqua 42 */
+#findbox {border-color:hsl(190,75%,42%)}
+/* aqua 50  (bar2) */
+#bar2, #leftnav, .tabcurve, .navlit, .classlit, .rowlit, .rowlit td, .menulit, .lit, .lit td, .topnav2list, .btnl:hover, .darkbox .btn, .darkbox .dimbtn, .dark .btn, .dark .dimbtn, #podbar1 .btn, .podbtn, .podbtnbig, .podopt0, .podopt1, .callit, .sellit, #busydot, .findbg .rowlit, #touchnavbtn:hover, #opsnav .tab:hover, #mailcount:hover
+	{background-color:hsl(190,60%,50%)}
+.iconstroke, .iconstrokeh {stroke:hsl(190,60%,50%)}
+.iconfill, .iconfillh, .menudot {fill:hsl(190,60%,50%)}
+/* aqua 62  (widgets) */
+.tab:hover, .persontype li:hover, .login-btn:hover, .help-btn:hover, .right-side li:hover, .toptab2:hover, .toptab2hi, .topnav2list option:hover, .darkbox .btn:hover, .dark .btn:hover, #podbar1 .btn:hover, .podbtn:hover, .podbtnbig:hover, .podoptlit, .podopthi:hover, .selhi, .touchnavlit
+	{background-color:hsl(190,60%,62%)}
+.textbox, .textboxp1, .menuclosed, .menuopenbox, .menuabtn, .menulist, .menualist, .border, textarea, .darkbox .calbox
+	{border-color:hsl(190,60%,62%)}
+.placeholder {color:hsl(190,60%,62%)}
+.widgetstroke {stroke:hsl(190,60%,62%); border-color:hsl(190,60%,62%);}
+.widgetfill {fill:hsl(190,60%,62%)}
+/* aqua 90 */
+.shaded {background-color:hsl(190,60%,90%)}
+
+/* green 27 */
+.podchoice:hover .podhandlel, .podmatch:hover .podhandler, .podsort:hover .podhandler, .podchoicelit .podhandlel, .podmatchlit .podhandler, .podsortlit .podhandler, .podhandlea .podhandler, .podinbtn:hover, .podinbtnlit, .seatrollchanged
+	{background-color:hsl(175,100%,27%)}
+.podchoice:hover .speaksvg, .podchoicelit .speaksvg {fill:hsl(175,100%,27%)}
+@keyframes listenbtnglow {0%,100% {background-color:hsl(175,100%,40%)} 50% {background-color:hsl(175,100%,27%)}}
+/* green 34 */
+.seat, .blockhi, .blockun, .colorbg {background-color:hsl(175,100%,34%) !important}
+.unseat, box, .pod td, .explanation, .annotation {border-color:hsl(175,100%,34%)}
+/* green 40  (graph) */
+.podhandlel, .podhandler, .podinbtn, .graph, .graphbar, .progbar, .blockhi:hover
+	{background-color:hsl(175,100%,40%) !important}
+#keypad td:hover, .keylock
+	{background-color:hsl(175,100%,40%) !important}
+.podchoice .speaksvg, .podchoiceun .speaksvg, .podkeyicon:hover {fill:hsl(175,100%,40%)}
+/* green 46 - see darkerblue.css */
+.podchoice:hover .podchoicer, .podmatch:hover .podchoicem, .podsort:hover .podchoicel, .podchoicelit .podchoicer, .podmatchlit .podchoicem, .podstemlit .podchoicel, .podsortlit .podchoicel, #podprogbar, #keypad td
+	{background-color:hsl(175,100%,46%)}
+#keypad td.unlit {background-color:hsl(175,100%,46%) !important}
+.textboxpod {border-color:hsl(175,100%,46%)}
+.podkeyicon {fill:hsl(175,100%,46%)}
+::selection {background-color:hsl(175,100%,46%)}  /* breaks rule in firefox */
+.mq-focused {box-shadow:0px 0px 0px 2px hsl(175,100%,46%)}
+.mq-editable-field .mq-selection, .mq-editable-field .mq-selection .mq-non-leaf, .mq-editable-field .mq-selection .mq-scaled {background: hsl(175,100%,46%) !important}
+@keyframes glow {0%,100% {background-color:hsl(175,100%,46%)} 50% {background-color:hsl(175,100%,43%)}}
+/* green 55  (hilite) */
+.rowhi:hover, .menurow:hover, .hi:hover, .hilite, .graphmarklit, .seatrollhi, .podchoicer, .podchoicel, .podchoicem, box, .pod td
+	{background-color:hsl(175,100%,55%)}
+/* green 44 - see above */
+
+/* yellow 85  (alert) */
+.alert, .alertcolor {background-color:hsl(60,100%,85%) !important; color:black !important;}
+
+/* white */
+.darkbox, .dark, .darkhi, .navlist, .topnav1list, .topnav2list, .navtab, .btn, .btncolor, .tab, .tab a, .minitab, #sidebar, .rowlit, .menulit, .lit, .toptab1, .toptab1hi, .toptab2, .toptab2hi, .toptabnull, #text_find, #tipbox, .btnl:hover, .dark .btnl, .btnllit, #podbar1, #podbar2, .jupbtns, .callabel, .calhead, .caldate, .caltoday, .callit, .seat, .seatrollchanged, .blockhi, .blockun, .findbg, .findbg .rowhi:hover, .lit .colortext, .colorbg
+	{color:white}
+.mininavwidget, .hi:hover .progspace {background-color:white}
+.seat, .seatphoto, .unseatphoto {border-color:white}
+.podbtn, .podbtnbig, .podopt0, .podopt1
+	{stroke:white; fill:white; color:white;}
+.btnfill, .calwidget {fill:white; stroke:white;}
+.btnstroke {stroke:white; fill:none;}
+.rowhi:hover, .hi:hover, .seatrollhi {color:black}
+.menuicon, .combostroke {stroke:white}
+.dimbtn, .tabdim, .minibar .dim, .navdim, .navtabdim, .caldim, #toptab1space .dim
+	{color:hsla(0,0%,100%,0.5)} /* transparent white */
+.dimbtn svg
+	{opacity:0.5}
+.darkbox .dim, .dark .dim, .lit .dim, .rowlit .dim, .menulit .dim, .seat .dim, .seatrollchanged .dim, .findbg .dim, .blockhi .dim
+	{color:hsla(0,0%,100%,0.6)}  /* transparent white */
+.dim, .menurow .dim, .menulabel .dim, .menulabel2 .dim, .normaltext .dim, .seatrollhi .dim
+	{color:hsla(0,0%,0%,0.4)}  /* transparent black  (keep this rule below white) */
+.iconstrokeh:hover {stroke:black}
+.iconfillh:hover {fill:black}
+.planedge {background:linear-gradient(to left, hsla(0,0%,100%,0) 0px, hsla(0,0%,100%,1) 10px)}
