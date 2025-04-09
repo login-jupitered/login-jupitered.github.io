@@ -40,8 +40,6 @@ body{
 	width: flex;
   display: inline-block;
   font-size:12px; 
-  padding-top: -3px;
-  padding-bottom: -3px;
   padding-right: 3px;
   padding-left: 3px;
   border-radius: 0px;
@@ -104,7 +102,7 @@ body{
     padding-left: 30px;
     padding-right: 30px;
     margin-right: -14px;
-    margin-left: -35px;
+    margin-left: -37px;
 }
 
 .help-btn{
