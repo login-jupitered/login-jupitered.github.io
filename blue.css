@@ -20,7 +20,7 @@ body{
   list-style-type:none;
   font-family: sans-serif;
   display: flex;
-  background-color: red;
+	color: white;
 }
 
 .right-side li{
