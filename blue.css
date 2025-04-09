@@ -145,7 +145,7 @@ body{
   left: 278px
 }
 
-.login-btn::marker {
+li::marker {
   color: #f2f2f2;
 
 .logo{
