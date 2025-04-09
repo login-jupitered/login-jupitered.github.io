@@ -145,6 +145,9 @@ body{
   left: 278px
 }
 
+.login-btn::marker {
+  color: #f2f2f2;
+
 .logo{
 	background-color:#086c84; 
 	border-radius:50px;
