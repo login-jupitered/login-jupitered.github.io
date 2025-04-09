@@ -90,6 +90,7 @@ body{
     padding-right: 30px;
     margin-right: -10px;
     margin-left: -11.5px;
+	transition: 0.5s;
 }
 
 .student{
