@@ -1,57 +1,69 @@
-<!doctype html>
-<html>
-<head>
-<base href="/login/">
-<link href="style.css" rel="stylesheet" type="text/css" />
-<link href="chrome.css" rel="stylesheet" type="text/css" />
-<link href="blue.css" rel="stylesheet" type="text/css" />
-<script>
+      <!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jupiter Login</title>
+  <link rel="stylesheet" href="styles.css"/>
+  <link rel="stylesheet" href="chrome.css"/>
+  <link rel="stylesheet" href="blue.css"/>
 
-if(navigator.userAgent.indexOf('Android')>=0)
-	window.addEventListener('load',function() {setTimeout(sniff,100);});  // screen/window size wrong at first
-else
-	window.addEventListener('load',sniff);
+  </head>
+<body>
+    <nav class="nav-container">
+        <div class="tabs">
+            <a href="https://jupitered.com/?home=1"><button class="logo"><img src="https://login.jupitered.com/media/jupiter_logo_w.svg" width="250" height="35" margin: "0"></button></a>
+          </ul>
+          <ul class="right-side" id="right-side">
+          <li><a href="https://login.jupitered.com/login/index.php"><p>Español</p></a></li>
+          <li><a href="https://login.jupitered.com/signup/"><p>Signup</p></a></li>
+          <li><a href="https://login.jupitered.com/edstore/"><p>EdStore</p></a></li>
+          <li><a href="https://login.jupitered.com/help/"><p>Help</p></a></li>
+          <li><a href="https://jupitered.com/privacy.html"><p>Privacy</p></a></li>
+          <li><a href="https://jupitered.com/?home=1"><p>About</p></a></li>
+          </ul>
+         </div>
+    </nav>
+  </header>
 
-function sniff() {
+  <main>
+    <div class="rcorners" id="rcorners">
+     <div class="login-box">
+      <div class="tabs">
+        <div class="persontype" id="persontype">
+          <ul>
+            <a href="student.html"><li class="student" id="student">Student</li></a>
+        <a href="parent.html"><li>Parent</li></a>
+        <a href="sub.html"><li>Sub</li></a>
+        <a href="ta.html"><li>TA</li></a>
+        <a href="index.html"><li>Staff</li></a>
+          </ul>
+      </div>
+     </div>
 
-	mini=(navigator.userAgent.toLowerCase().indexOf('mobile')>0 && navigator.userAgent.indexOf('iPad')==-1 && Math.max(screen.width,screen.height)<1000)? 1:0;
-		// ipad is 1024x768; netbooks may have size 1280x720, zoom may result in 1012x569; all phones have "mobile" in agent string
-	touch=mini;
-
-	ww=window.innerWidth;
-	wh=window.innerHeight;
-	if(ww<wh) sw=Math.min(screen.width,screen.height), sh=Math.max(screen.height,screen.width);  // screen size may or may not reflect orientation
-	else sw=Math.max(screen.width,screen.height), sh=Math.min(screen.height,screen.width);
-	scale=(Math.abs(ww-sw)<=2)? 1 : sw/ww;  // ignore slight irregularities
-	bar=sh-wh*scale;  // size of browser bar (about 120) or status bar (about 20-25), adjust for screen zoom
-		// got false bar 88 on android standalone first time only; okay if false positive for laptop fullscreen
-	mobileapp=(navigator.standalone || bar<=40);
-	
-	document.form1.elements['mini'].value = mini;
-	document.form1.elements['screensize'].value = screen.width+'x'+screen.height;
-	document.form1.elements['mobileapp'].value = mobileapp? 1:0;
-
-	try {  // detect ipad posing as laptop
-		if(navigator.platform=='MacIntel' && navigator.maxTouchPoints>1) savecookie('agent','iPad-',0);
-	} catch(e) {}
-
-		redir=recoversession();  // redirects if valid
-	
-		document.form1.submit();
-	}
-</script>
-<meta name=viewport content="width=device-width, initial-scale=1">
-<title>Jupiter</title>
-<script src="../js/1.js?4"></script>
-<script src="../js/2.js?4"></script>
-</head>
-<body style="margin:20px; font-family:Arial; font-size:13px; user-select:text;">
-<form name=form1 method=post action="/login/index.php">
-<input type=hidden name=checkbrowser value=1>
-<input type=hidden name=mini>
-<input type=hidden name=screensize>
-<input type=hidden name=mobileapp>
-<input type=submit value="Continue" style="width:500px; height:300px; opacity:0;">
-</form>
+      <form method="POST" data-netlify="true">
+        <ul class="interface" id="interface">
+          <li><input type="text" class="username" placeholder="Username" width="600" height="70"/></li>
+          <br>
+          <li><input type="password" class="password" placeholder="Password" width="600" height="70"/></li>
+          <br>
+          <li><label class="arrow"><select>
+            <option>Stay logged in</option>
+            <option>Lock screen if idle 5 minutes</option>
+            <option>Lock screen if idle 10 minutes</option>
+            <option>Lock screen if idle 15 minutes</option>
+            <option>Lock screen if idle 20 minutes</option>
+            <option>Lock screen if idle 30 minutes</option>
+            <option>Lock screen if idle 45 minutes</option>
+            <option>Lock screen if idle 60 minutes</option>
+            </select></label></li>
+        </ul>
+          <ul><a href="https://login.jupitered.com/login/forgotstaff.php"><li type="button" class="help-btn" id="help-btn">Help Me Login</li></a>
+          <li type="submit" class="login-btn" id="login-btn">Login</li>
+      </ul>
+     </form>
+   </div>      
+ </div>
+ </main>
 </body>
 </html>
