@@ -114,6 +114,7 @@ body{
 }
 
 .login-btn{
+	list-style-type:none;
 	font-size:19px; 
 	background-color:#086c84; 
 	border-radius:50px;
@@ -127,7 +128,6 @@ body{
     padding-right: 47px;
   display: inline-block;
   font-family: sans-serif;
-  list-style-type:none;
   position: relative;
   top:-291px;
   left: 278px
