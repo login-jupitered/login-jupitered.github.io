@@ -4,18 +4,6 @@ body{
   background-color:#f2f2f2
 }
 
-.arrow::after{
-  content: '';
-  border-width: 7px;
-  border-style: solid;
-  border-color: transparent;
-  border-top-color: #64c5d8;
-  display: inline-block;
-  position: absolute;
-  bottom:470px;
-  left: 865px;
-}
-
 .nav-container{
 	display: flex;
 	margin: 0;
@@ -190,6 +178,18 @@ select{
   height: 30px;
   font-size: 19px;
   padding-left: 10px;
+}
+
+.arrow::after{
+  content: '';
+  border-width: 7px;
+  border-style: solid;
+  border-color: transparent;
+  border-top-color: #64c5d8;
+  display: inline-block;
+  position: absolute;
+  bottom:470px;
+  left: 865px;
 }
 
 /* gray 95  (bg) - see darkercolor.css */
