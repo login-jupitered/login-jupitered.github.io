@@ -12,8 +12,8 @@ body{
   border-top-color: #64c5d8;
   display: inline-block;
   position: absolute;
-  bottom:28.245vw;
-  left: 33.789vh;
+  bottom:28.245vh;
+  left: 33.789vw;
 }
 
 .nav-container{
@@ -27,9 +27,9 @@ body{
 }
 
 .right-side{
-	margin-top: -47px;
+	margin-top: -2.825vh;
 	margin-right: 0;
-	margin-left: 1140px;
+	margin-left: 44.531vw;
   list-style-type:none;
   font-family: sans-serif;
   display: flex;
