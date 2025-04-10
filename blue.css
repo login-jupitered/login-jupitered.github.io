@@ -22,8 +22,8 @@ body{
 	border-radius: 0%;
 	background: #0A8097;
 	color: white;
-  width: 1500px;
-  height: 30px;
+  width: 58.594vw;
+  height: 1.803vh;
 }
 
 .right-side{
@@ -40,23 +40,23 @@ body{
 	width: flex;
   display: inline-block;
   font-size:12px; 
-  padding-right: 3px;
-  padding-left: 3px;
+  padding-right: 0.117vw;
+  padding-left: 0.117vw;
   border-radius: 0px;
 }
 
 .rcorners {
   border-radius: 15px;
   background: #ffffff;
-  padding-top: 20px;
-  padding-bottom: 10px;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-top: 1.202vh;
+  padding-bottom: 0.601vh;
+  padding-left: 0.781vw;
+  padding-right: 0.781vw;
   width: 32%;
-  height: 282px;
+  height: 16.947vh;
   margin: auto;
-  margin-top: 125px;
-  margin-bottom: 200px;
+  margin-top: 7.512vh;
+  margin-bottom: 12.019vh;
 }
 
 .tab{
