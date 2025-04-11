@@ -63,8 +63,8 @@ body{
 	font-size:19px; 
   background-color:#086c84; 
 	border-radius:50px;
-	padding-top: 5px;
-	padding-bottom: 5px;
+	padding-top: 0.3vh;
+	padding-bottom: 0.3vh;
 }
 
 .persontype {
@@ -73,11 +73,11 @@ body{
   font-size:19px; 
   font-family: sans-serif;
   width: 95%;
-  margin-top: -18px;
+  margin-top: -1.082vh;
   margin-right: auto;
   margin-left: auto;
   border-radius: 50px;
-  margin-bottom: 30px;
+  margin-bottom: 1.803vh;
 }
 
 .persontype li:not(.student){
