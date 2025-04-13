@@ -70,7 +70,7 @@ a, a:link, a:visited{
   padding-left: 0.781vw;
   padding-right: 0.781vw;
   width: 32%;
-  height: 34.147vh;
+  height: 33.147vh;
   margin: auto;
   margin-top: 7.813rem;
   margin-bottom: 12.5rem;
@@ -128,17 +128,17 @@ a, a:link, a:visited{
 	  border-radius:50px;
   color: white;
   width: flex;
-    padding-top: 0.625rem;
-    padding-bottom: 0.625rem;
+    padding-top: 0.55rem;
+    padding-bottom: 0.55rem;
     padding-left: 0.938rem;
     padding-right: 0.938rem;
   display: inline-block;
   font-family: sans-serif;
   list-style-type:none;
   margin-right: 9.688rem;
-  margin-left: -2rem;
+  margin-left: -1.7rem;
   position: relative;
-  top: -15.75rem;
+  top: -15.968rem;
 }
 
 .login-btn{
@@ -150,15 +150,15 @@ a, a:link, a:visited{
   border-color: #086c84;
   color: white;
   width: flex;
-    padding-top: 0.438rem;
-    padding-bottom: 0.438rem;
+    padding-top: 0.408rem;
+    padding-bottom: 0.408rem;
     padding-left: 2.938rem;
     padding-right: 2.938rem;
   display: inline-block;
   font-family: sans-serif;
   position: relative;
-  top: -18.188rem;
-  left: 17.375rem;
+  top: -18.46rem;
+  left: 17.075rem;
 }
 
 .logo{
@@ -166,29 +166,32 @@ a, a:link, a:visited{
   border-radius:50px;
   border: 1px solid #086c84;
   display: flex;
-  margin-left: -1.8rem;
+  margin-left: -1rem;
   width: 15vw;
+  padding: 0.3rem;
 }
 
 .interface{
-	width: 500px;
-	height: 400px;
+	width: 32.25vw;
+	height: 47.338vh;
 	margin-left: 25%;
   margin-bottom: 0;
   list-style-type:none;
   font-family: sans-serif;
   appearance: none;
-  margin-left: 2.188rem;
+  margin-left: 2.45rem;
+  margin-top: 1.7rem;
 }
 
 input{
   background: none;
-  border: 2px solid #64c5d8;
-  border-radius: 10px;
+  border: 1.7px solid #64c5d8;
+  border-radius: 7px;
   width: 60%;
-  height: 1.502vw;
+  height: 1.62vw;
   font-size: 1.1875em;
   padding-left: 0.625rem;
+  margin-top: 0.15rem;
 }
 
 input::placeholder{
@@ -198,12 +201,14 @@ input::placeholder{
 select{
 	appearance: none;
 	background: none;
-	border: 2px solid #64c5d8;
-	border-radius: 10px;
+	border: 1.7px solid #64c5d8;
+	border-radius: 7px;
   width: 63%;
-  height: 1.875rem;
   font-size: 1.1875em;
   padding-left: 0.625rem;
+  padding-top: 0.05rem;
+  padding-bottom: 0.05rem;
+  margin-top: 0.15rem;
 }
 /* gray 95  (bg) - see darkercolor.css */
 body, .bgcolor, #pagebuttons, .progspace {background-color:hsl(0,0%,95%)}
