@@ -4,6 +4,19 @@ body{
   background-color:#f2f2f2
 }
 
+ol{
+  list-style-type:none;
+}
+
+li{
+  list-style-type:none;
+}
+
+a, a:link, a:visited{
+  color: white;
+  text-decoration:none;
+}
+
 .arrow::after{
   content: '';
   border-width: 7px;
@@ -12,7 +25,7 @@ body{
   border-top-color: #64c5d8;
   display: inline-block;
   position: absolute;
-  bottom:29.375rem;
+  bottom:29.675rem;
   left: 54.062rem;
 }
 
@@ -22,27 +35,31 @@ body{
 	border-radius: 0%;
 	background: #0A8097;
 	color: white;
-  width: 58.594vw;
-  height: 1.803vh;
+  width: 100.894vw;
+  height: 3.803vh;
 }
 
 .right-side{
 	margin-top: -2.938rem;
 	margin-right: 0;
-	margin-left: 44.531vw;
+	margin-left: 74.531vw;
   list-style-type:none;
   font-family: sans-serif;
   display: flex;
   color: white;
+  text-decoration:none;
 }
 
 .right-side li{
 	width: flex;
   display: inline-block;
-  font-size:12px; 
-  padding-right: 0.117vw;
-  padding-left: 0.117vw;
-  border-radius: 0px;
+  font-size: 12px; 
+  padding-right: 0.517vw;
+  padding-left: 0.517vw;
+  border-radius: 50px;
+  margin-left: 1rem;
+  color: white;
+  text-decoration:none;
 }
 
 .rcorners {
@@ -53,7 +70,7 @@ body{
   padding-left: 0.781vw;
   padding-right: 0.781vw;
   width: 32%;
-  height: 16.947vh;
+  height: 34.147vh;
   margin: auto;
   margin-top: 7.813rem;
   margin-bottom: 12.5rem;
@@ -107,8 +124,8 @@ body{
 
 .help-btn{
   font-size: 1.1875em; 
-  background-color:#086c84; 
-  border-radius:50px;
+  background-color:#086c84;  
+	  border-radius:50px;
   color: white;
   width: flex;
     padding-top: 0.625rem;
@@ -144,16 +161,12 @@ body{
   left: 17.375rem;
 }
 
-.login::marker {
-  color: #f2f2f2;
-}
-
 .logo{
   background-color:#086c84; 
   border-radius:50px;
   border: 1px solid #086c84;
   display: flex;
-  margin-left: -1.875rem;
+  margin-left: -1.8rem;
 }
 
 .interface{
@@ -191,7 +204,6 @@ select{
   font-size: 1.1875em;
   padding-left: 0.625rem;
 }
-
 /* gray 95  (bg) - see darkercolor.css */
 body, .bgcolor, #pagebuttons, .progspace {background-color:hsl(0,0%,95%)}
 #submast, #minisubmast {background:linear-gradient(to top, hsla(0,0%,95%,0) 0px, hsla(0,0%,95%,1) 10px)}
@@ -226,7 +238,7 @@ a, .hyperlink, .clink:hover, color, .colortext, .btnl {color:hsl(190,85%,32%)}
 .iconstroke, .iconstrokeh {stroke:hsl(190,60%,50%)}
 .iconfill, .iconfillh, .menudot {fill:hsl(190,60%,50%)}
 /* aqua 62  (widgets) */
-.tab:hover, .persontype li:hover, .persontype li:active, .login-btn:hover, .help-btn:hover, .right-side li:hover, .toptab2:hover, .toptab2hi, .topnav2list option:hover, .darkbox .btn:hover, .dark .btn:hover, #podbar1 .btn:hover, .podbtn:hover, .podbtnbig:hover, .podoptlit, .podopthi:hover, .selhi, .touchnavlit
+.tab:hover, .persontype li:hover, .login-btn:hover, .help-btn:hover, .right-side li:hover, .toptab2:hover, .toptab2hi, .topnav2list option:hover, .darkbox .btn:hover, .dark .btn:hover, #podbar1 .btn:hover, .podbtn:hover, .podbtnbig:hover, .podoptlit, .podopthi:hover, .selhi, .touchnavlit
 	{background-color:hsl(190,60%,62%)}
 .textbox, .textboxp1, .menuclosed, .menuopenbox, .menuabtn, .menulist, .menualist, .border, textarea, .darkbox .calbox
 	{border-color:hsl(190,60%,62%)}
