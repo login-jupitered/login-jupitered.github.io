@@ -40,9 +40,9 @@ a, a:link, a:visited{
 }
 
 .right-side{
-	margin-top: -2.938rem;
+	margin-top: -2.838rem;
 	margin-right: 0;
-	margin-left: 74.531vw;
+	margin-left: 72.031vw;
   list-style-type:none;
   font-family: sans-serif;
   display: flex;
@@ -57,7 +57,7 @@ a, a:link, a:visited{
   padding-right: 0.517vw;
   padding-left: 0.517vw;
   border-radius: 50px;
-  margin-left: 1rem;
+  margin-left: 0.5rem;
   color: white;
   text-decoration:none;
 }
@@ -167,6 +167,7 @@ a, a:link, a:visited{
   border: 1px solid #086c84;
   display: flex;
   margin-left: -1.8rem;
+  width: 15vw;
 }
 
 .interface{
