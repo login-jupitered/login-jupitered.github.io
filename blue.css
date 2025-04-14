@@ -17,6 +17,10 @@ a, a:link, a:visited{
   text-decoration:none;
 }
 
+function myFunction() {
+     element.style.color = hsl(190,100%,25%);
+}
+
 .arrow::after{
   content: '';
   border-width: 7px;
