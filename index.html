@@ -32,11 +32,16 @@
       <div class="tabs">
         <div class="persontype" id="persontype">
           <ul>
-            <a href="student.html"><li class="student" id="student">Student</li></a>
-        <a href="parent.html"><li>Parent</li></a>
-        <a href="sub.html"><li>Sub</li></a>
-        <a href="ta.html"><li>TA</li></a>
-        <a href="index.html"><li>Staff</li></a>
+            <a href="student.html"><li class="student" id="student" onclick="myFunction()">Student</li></a>
+        <a href="parent.html"><li onclick="myFunction()">Parent</li></a>
+        <a href="sub.html"><li onclick="myFunction()">Sub</li></a>
+        <a href="ta.html"><li onclick="myFunction()">TA</li></a>
+        <a href="index.html"><li onclick="myFunction()">Staff</li></a>
+            <script>
+function myFunction() {
+     element.style.color = hsl(190,100%,25%);
+}
+</script>
           </ul>
       </div>
      </div>
