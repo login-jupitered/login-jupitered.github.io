@@ -1,4 +1,8 @@
 	/* BLUE */
+function myFunction() {
+     element.style.color = hsl(190,100%,25%);
+}
+
 body{
 	margin: 0;
   background-color:#f2f2f2
@@ -17,10 +21,6 @@ a, a:link, a:visited{
   text-decoration:none;
 }
 
-function myFunction() {
-     .persontype.style.color = hsl(190,100%,25%);
-}
-
 .arrow::after{
   content: '';
   border-width: 7px;
@@ -29,8 +29,9 @@ function myFunction() {
   border-top-color: #64c5d8;
   display: inline-block;
   position: absolute;
-  bottom:29.675rem;
-  left: 54.062rem;
+  width: 0.05vw;
+  bottom:29.255rem;
+  left: 53.362rem;
 }
 
 .nav-container{
@@ -44,9 +45,9 @@ function myFunction() {
 }
 
 .right-side{
-	margin-top: -2.838rem;
+	margin-top: -3.15rem;
 	margin-right: 0;
-	margin-left: 72.031vw;
+	margin-left: 72.9vw;
   list-style-type:none;
   font-family: sans-serif;
   display: flex;
@@ -61,7 +62,7 @@ function myFunction() {
   padding-right: 0.517vw;
   padding-left: 0.517vw;
   border-radius: 50px;
-  margin-left: 0.5rem;
+  margin-left: 0.35rem;
   color: white;
   text-decoration:none;
 }
@@ -210,8 +211,8 @@ select{
   width: 63%;
   font-size: 1.1875em;
   padding-left: 0.625rem;
-  padding-top: 0.05rem;
-  padding-bottom: 0.05rem;
+  padding-top: 0.085rem;
+  padding-bottom: 0.09rem;
   margin-top: 0.15rem;
 }
 /* gray 95  (bg) - see darkercolor.css */
@@ -223,7 +224,7 @@ body, .bgcolor, #pagebuttons, .progspace {background-color:hsl(0,0%,95%)}
 .lessonnoclass {background-color:hsl(0,0%,90%)}
 
 /* aqua 25  (logo,btn) */
-.btn, .dimbtn, .btncolor, .menuabtndark, #logobg1, #logobg2, #loginlogobg, .toptab1:hover, .toptab1hi, .navrow:hover, .classtab:hover, .classsemi:hover, .darkhi:hover, .btntran:hover, .btntranlit, .darker, #podprogspace, .jupbtnlit, .jupbtn:hover, .caldate:hover, .caldim:hover, .caltoday, .btnllit, .findbg .rowhi:hover, .xhover, #mailcount
+.btn, .dimbtn, .btncolor, .menuabtndark, #logobg1, #logobg2, #loginlogobg, .toptab1:hover, .toptab1hi, .navrow:hover, .classtab:hover, persontype.active,  .classsemi:hover, .darkhi:hover, .btntran:hover, .btntranlit, .darker, #podprogspace, .jupbtnlit, .jupbtn:hover, .caldate:hover, .caldim:hover, .caltoday, .btnllit, .findbg .rowhi:hover, .xhover, #mailcount
 	{background-color:hsl(190,100%,25%)}
 .poduidark {background-color:hsl(190,100%,25%) !important}
 .logotext {color:hsl(190,100%,25%)}
